@@ -1,3 +1,7 @@
+// LeetCode 141 - Linked List Cycle
+// Approach: Floyd's Cycle Detection (Slow & Fast Pointer)
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 /**
  * Definition for singly-linked list.
  * class ListNode {
