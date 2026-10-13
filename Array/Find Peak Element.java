@@ -1,3 +1,9 @@
+// Approach: Linear Search
+// Check boundary elements first, then check each middle element.
+// A peak element is greater than its left and right neighbors.
+// TC: O(n)
+// SC: O(1)
+
 class Solution {
     public int findPeakElement(int[] nums) {
         int index=0;
