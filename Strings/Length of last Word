@@ -1,3 +1,10 @@
+// LeetCode 58: Length of Last Word
+// Approach: Traverse from Right to Left
+// Ignore trailing spaces and count characters of the last word.
+// Stop when a space is found after counting characters.
+// TC: O(n)
+// SC: O(1)
+
 class Solution {
     public int lengthOfLastWord(String s) {
         int count=0;
