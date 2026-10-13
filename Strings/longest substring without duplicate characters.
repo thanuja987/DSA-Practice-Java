@@ -1,0 +1,29 @@
+
+// LeetCode 3: Longest Substring Without Repeating Characters
+// Approach: Brute Force
+// Start from each index and check substrings.
+// Use a seen array to identify repeated characters.
+// Stop when a character repeats and update maxlen.
+// TC: O(n^2)
+// SC: O(1) - fixed-size array of 256 elements
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int maxlen = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            int seen[] = new int[256];
+
+            for (int j = i; j < s.length(); j++) {
+                if (seen[s.charAt(j)] == 1) {
+                    break;
+                }
+
+                seen[s.charAt(j)] = 1;
+                maxlen = Math.max(maxlen, j - i + 1);
+            }
+        }
+
+        return maxlen;
+    }
+}
