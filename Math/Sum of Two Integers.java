@@ -1,15 +1,17 @@
+// LeetCode 371: Sum of Two Integers
+
 class Solution {
     public int getSum(int a, int b) {
-        // Approach: Direct addition using the + operator.
+        // Directly add the two integers
         return a + b;
     }
 }
 
 /*
+Approach:
+1. Use the + operator to add a and b.
+2. Return the sum.
+
 Time Complexity (TC): O(1)
 Space Complexity (SC): O(1)
-
-Explanation:
-- TC: Addition takes constant time.
-- SC: No extra space is used.
 */
